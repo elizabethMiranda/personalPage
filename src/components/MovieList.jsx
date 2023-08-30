@@ -1,18 +1,20 @@
 import { getMoviesAll } from "../helpers";
+import { MovieCard } from "./MovieCard";
 
 export const MovieList = () => {
 
     const datoMovie = getMoviesAll();
 
   return (
-    <ul>
+    <div className="row rows-cols-1 row-cols-md-3 g-3">
         {
             datoMovie.map( movie => (
-                <li key={movie.id}>
-                    { movie.title}
-                </li>
+                <MovieCard 
+                    key={movie.id}
+                    { ...movie }
+                />
             ))
         }
-    </ul>
+    </div>
   )
 }

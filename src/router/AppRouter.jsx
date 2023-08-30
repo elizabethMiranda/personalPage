@@ -1,11 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
+import { LoginPage } from '../auth/pages/LoginPage';
+import { MoviesRoutes } from '../movies/routes';
 
 export const AppRouter = () => {
   return (
     <>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="/*" element={<MoviesRoutes />} />
         </Routes>
     </>
   )

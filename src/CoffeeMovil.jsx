@@ -1,9 +1,9 @@
-import { MovieList } from "./components/MovieList"
+import { AppRouter } from "./router/AppRouter"
 
 export const CoffeeMovil = () => {
   return (
     <>
-        <MovieList />
+        <AppRouter />
         {/* <div className="container">
             <div className="row">
                 <div className="col">

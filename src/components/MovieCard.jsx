@@ -13,9 +13,9 @@ export const MovieCard = ({
                 <div className="card-columns">
                     <div className="card">
                     <img src={`https://www.themoviedb.org/t/p/w440_and_h660_face${poster_path}`} className="card-img-top img-fluid img-thumbnail rounded" alt={ title} />
-                    <div className="card-body">
+                    {/* <div className="card-body">
                         <h6 className="card-title">{title}</h6>
-                    </div>
+                    </div> */}
                     </div>
                 </div>
             </div>
